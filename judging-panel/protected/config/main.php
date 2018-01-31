@@ -242,11 +242,11 @@ return array(
 
 		//'pathBaseImages'=>"http://localhost/wwwComiteConcursante/pictures/contests/con_3c391e5c9feec1f95282a36bdd5d41ba/",
 
-		'pathBaseImages'=>"https://qa.2geeksonemonkey.com/global_judging/mexico/community/pictures/contests/",
+		'pathBaseImages'=>"https://http://dev.2geeksonemonkey.com/cfm/ReflejosDelAlma/community/pictures/contests/",
 
 			
 
-		'pathBaseProfiles'=>"https://qa.2geeksonemonkey.com/global_judging/mexico/community/pictures/contests/",
+		'pathBaseProfiles'=>"https://dev.2geeksonemonkey.com/cfm/ReflejosDelAlma/community/pictures/contests/",
 
 		//'pathBaseProfiles'=>"http://localhost/wwwComiteConcursante/",
 

@@ -753,7 +753,7 @@ class UsrUsuariosController extends Controller {
 	 * Action para agregar fotos del usuario
 	 */
 	public function actionGuardarFotosCompetencia() {
-		$idConcurso = 5;//Yii::app ()->user->concurso;
+		$idConcurso = 1;//Yii::app ()->user->concurso;
 		$idUsuario = Yii::app ()->user->concursante->id_usuario;
 		$tokenUsuario = Yii::app ()->user->concursante->txt_usuario_number;
 		$respuesta = array ();

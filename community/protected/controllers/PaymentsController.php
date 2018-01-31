@@ -1338,7 +1338,7 @@ class PaymentsController extends Controller {
 
 		
 
-		// $relUsrTerminos->save();
+		 $relUsrTerminos->save();
 
 	}
 
