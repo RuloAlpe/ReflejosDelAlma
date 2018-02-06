@@ -149,7 +149,7 @@ class UsrUsuariosController extends Controller {
 			 * @todo Poner un dropdown con el pais adecuado por el momento todos son canada
 			 *      
 			 */
-			$competidor->id_pais = 1;
+			$competidor->id_pais = 4;
 			
 			// Obtenemos el archivo enviado
 			$competidor->nombreImagen = CUploadedFile::getInstance ( $competidor, 'nombreImagen' );
@@ -651,7 +651,7 @@ class UsrUsuariosController extends Controller {
 		
 		$usuario = Yii::app ()->user->concursante;
 		
-		$concursosDisponibles = ConContests::getConcursosHabilitadosPais ( 1 );
+		$concursosDisponibles = ConContests::getConcursosHabilitadosPais ( 4 );
 		
 		$concursosUsuario = ConContests::getConcursosParticiparUsuario($usuario->id_usuario);
 		
@@ -753,7 +753,7 @@ class UsrUsuariosController extends Controller {
 	 * Action para agregar fotos del usuario
 	 */
 	public function actionGuardarFotosCompetencia() {
-		$idConcurso = 1;//Yii::app ()->user->concurso;
+		$idConcurso = 7;//Yii::app ()->user->concurso;
 		$idUsuario = Yii::app ()->user->concursante->id_usuario;
 		$tokenUsuario = Yii::app ()->user->concursante->txt_usuario_number;
 		$respuesta = array ();

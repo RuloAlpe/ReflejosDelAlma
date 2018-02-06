@@ -8,11 +8,11 @@
 
 <?php echo CHtml::hiddenField("cmd", $cmd)?>
 
-<?php echo CHtml::hiddenField("return", "https://2geeksonemonkey.com/demos/global-judging/mexico/community/usrUsuarios/revisarPago?contest=".$contest)?>
+<?php echo CHtml::hiddenField("return", "https://2geeksonemonkey.com/cfm/ReflejosDelAlma/community/usrUsuarios/revisarPago?contest=".$contest)?>
 
 <?php echo CHtml::hiddenField("custom", $custom)?>
 
-<?php echo CHtml::hiddenField("notify_url", "https://2geeksonemonkey.com/demos/global-judging/mexico/community/usrUsuarios/iPNPayPal")?>
+<?php echo CHtml::hiddenField("notify_url", "https://2geeksonemonkey.com/cfm/ReflejosDelAlma/community/usrUsuarios/iPNPayPal")?>
 
 <?php echo CHtml::hiddenField("lc", $lc)?>
 

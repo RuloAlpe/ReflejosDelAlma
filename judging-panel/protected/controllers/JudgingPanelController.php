@@ -312,7 +312,7 @@ class JudgingPanelController extends Controller
 		
 		// Cargamos categorias
 		$criteriaCategorias = new CDbCriteria();
-		$criteriaCategorias->condition = 'id_contest=1 AND id_category NOT IN (:idPic)';
+		$criteriaCategorias->condition = 'id_contest=7 AND id_category NOT IN (:idPic)';
 		$criteriaCategorias->params = array(
 			':idPic' => $photoCalificar->id_category_original
 		);
@@ -331,7 +331,7 @@ class JudgingPanelController extends Controller
 		if (isset($_POST["WrkPics"])) {
 
 			$wrkPicsCalificaciones = WrkPicsCalificaciones::model()->findAll(array(
-				'condition' => 'id_contest=1 AND id_juez=:idJuez AND id_pic=:idPic',
+				'condition' => 'id_contest=7 AND id_juez=:idJuez AND id_pic=:idPic',
 				'params' => array(
 					':idJuez' => $idJuez,
 					':idPic' => $photoCalificar->id_pic
@@ -356,7 +356,7 @@ class JudgingPanelController extends Controller
 
 					":idContest" => $concurso->id_contest,
 					':idPic' => $photoCalificar->id_pic,
-					':tipoStatus' => 2
+					':tipoStatus' => 4
 				)
 			));
 
@@ -403,7 +403,7 @@ class JudgingPanelController extends Controller
 			$cJ->id_contest = $photoCalificar->id_contest;
 			$cJ->id_juez = $idJuez;
 			$cJ->id_pic = $photoCalificar->id_pic;
-			$cJ->id_status_calificacion = 2;
+			$cJ->id_status_calificacion = 4;
 			$cJ->id_usuario = $photoCalificar->ID;
 			$cJ->save();
 

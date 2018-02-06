@@ -238,11 +238,11 @@ return array(
 
 		'adminEmail'=>'webmaster@example.com',
 
-		 'pathBaseImages'=>"https://2geeksonemonkey.com/demos/global-judging/mexico/community/pictures/contests/",
+		'pathBaseImages'=>"http://dev.2geeksonemonkey.com/cfm/ReflejosDelAlma/community/pictures/contests/",
 
-		 'pathBase'=>'https://2geeksonemonkey.com/demos/global-judging/mexico/community/',
+		'pathBase'=>'http://dev.2geeksonemonkey.com/cfm/ReflejosDelAlma/community/',
 
-		 'pathBaseProfiles'=>"https://2geeksonemonkey.com/demos/global-judging/mexico/community/",
+		'pathBaseProfiles'=>"http://dev.2geeksonemonkey.com/cfm/ReflejosDelAlma/community/",
 
 		// 'pathBaseImages'=>"http://globaljudging.com/community/pictures/contests/",
 
