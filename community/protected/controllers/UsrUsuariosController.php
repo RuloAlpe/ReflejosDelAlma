@@ -1135,6 +1135,7 @@ class UsrUsuariosController extends Controller {
 			if (empty ( $usuarioDB )) {
 				
 				// Guarda la informacion de facebook
+				$entUsuario->id_pais = 4;
 				$entUsuario->b_login_social_network = 1;
 				$entUsuario->id_usuario_facebook = $usuario ['profile'] ['id'];
 				$entUsuario->txt_nombre = $usuario ['profile'] ['first_name'];
