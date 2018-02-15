@@ -8,6 +8,7 @@ $cs->registerCssFile ( Yii::app ()->request->baseUrl . "/css/concursos.css" );
 	background-repeat: no-repeat;
 	background-size:cover;
 	background-position:center;
+	background-color: black;
 }
 
 	.panel-body{

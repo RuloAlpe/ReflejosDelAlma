@@ -982,7 +982,7 @@ class PaymentsController extends Controller {
 
 			// Si el pago se hara por paypal
 
-			if ($oc->id_payment_type == 6) {
+			if ($oc->id_payment_type == 1) {
 
 				// Render del formulario para paypal
 
@@ -1016,7 +1016,7 @@ class PaymentsController extends Controller {
 
 				) );
 
-			} else if ($oc->id_payment_type == 7) {
+			} else if ($oc->id_payment_type == 2) {
 
 				
 
