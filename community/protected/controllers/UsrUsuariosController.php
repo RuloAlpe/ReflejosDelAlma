@@ -805,11 +805,11 @@ class UsrUsuariosController extends Controller {
 					return;
 				}
 				
-				$bits = $size ['bits'];
+				//$bits = $size ['bits'];
 				$channels = $size ['channels'];
 				$mime = $size ['mime'];
 				
-				if ($bits > 6144) {
+				if (filesize($raw_file_name) > 33554432) {
 					$respuesta ["message"] = Yii::t ( 'formFotos', 'errorFileSize' );
 				}
 				
@@ -1516,6 +1516,8 @@ class UsrUsuariosController extends Controller {
 
 				if(empty ( $cuponBaseDatos )){
 					$message = 'Cupón no válido';
+				}else if($cuponBaseDatos->b_usado){
+					$message = 'Cupón ya ha sido utilizado';
 				}else{
 					$message = 'Cupón ya ha sido utilizado';
 				}
